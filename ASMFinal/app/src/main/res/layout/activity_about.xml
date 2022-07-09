@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".About">
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_marginTop="50dp"
+        android:id="@+id/screen_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="550dp" />
+    <Button
+        android:id="@+id/btnbd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:background="@drawable/btncolor"
+        android:layout_above="@+id/tab"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="BẮT ĐẦU"/>
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="16dp"
+        android:background="#fff"
+        android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
+        android:drawableTint="@color/Xam"
+        android:text="Next"
+        android:textColor="@color/Xam"
+       android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="32dp"/>
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:id="@+id/tab"
+    android:layout_above="@id/btn_next"
+app:tabBackground="@drawable/indicator1"
+    android:layout_centerHorizontal="true"
+        app:tabIndicatorColor="#fff"
+       />
+</RelativeLayout>

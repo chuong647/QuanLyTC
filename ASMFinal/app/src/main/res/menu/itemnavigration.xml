@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/khoanthu"
+            android:icon="@drawable/icontutien"
+            android:title="Khoản Thu"/>
+        <item android:id="@+id/khoanchi"
+            android:icon="@drawable/ic_attach_money_black_24dp"
+            android:title="Khoản Chi"/>
+        <item android:id="@+id/thongke"
+            android:icon="@drawable/ic_insert_chart_black_24dp"
+            android:title="Thống Kê"/>
+    </group>
+    <item android:title="Thông Tin">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/about"
+                    android:icon="@drawable/ic_info_black_24dp"
+                    android:title="About"/>
+                <item android:id="@+id/logout"
+                    android:icon="@drawable/iconshutdown"
+                    android:title="Logout"/>
+                <item android:id="@+id/exit"
+                    android:icon="@drawable/ic_exit_to_app_black_24dp"
+                    android:title="Exit"/>
+            </group>
+        </menu>
+    </item>
+</menu>

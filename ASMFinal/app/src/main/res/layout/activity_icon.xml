@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFB90F"
+
+    tools:context=".Icon">
+
+
+    <ImageView
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="35dp"
+        android:transitionName="logo_transition"
+        android:id="@+id/logo"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/logo1"/>
+    <TextView
+        android:id="@+id/ten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bangers"
+        android:text="Save Money"
+        android:transitionName="ten_transition"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/logo"
+        android:textSize="70sp"
+        android:layout_marginLeft="40dp"
+         />
+
+    <TextView
+        android:id="@+id/loimoi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please come with us"
+        android:textSize="15sp"
+        android:layout_marginLeft="120dp"
+        android:layout_below="@+id/ten"
+
+        />
+
+</RelativeLayout>

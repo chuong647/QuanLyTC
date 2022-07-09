@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Quản Lí Thu Chi</string>
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
+    <string name="facebook_app_id">2740707952829291</string>
+    <string name="fb_login_protocol_scheme">fb2740707952829291</string>
+
+</resources>

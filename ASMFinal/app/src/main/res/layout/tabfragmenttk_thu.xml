@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <TextView
+           android:id="@+id/ngaydau"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+           android:textStyle="italic"
+           android:drawableLeft="@drawable/iconlich"/>
+       <TextView
+           android:id="@+id/ngaycuoi"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+           android:layout_marginEnd="5dp"
+           android:textStyle="italic"
+           android:drawableLeft="@drawable/iconlich"/>
+   </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvthongke"
+            android:layout_above="@+id/chart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            />
+        <lecho.lib.hellocharts.view.PieChartView
+            android:id="@+id/chart"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+           android:layout_above="@+id/txttentien"/>
+        <TextView
+            android:id="@+id/txttentien"
+            android:textColor="#000"
+            android:text="Tổng Tiền"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="20dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="60dp"
+            />
+    </RelativeLayout>
+
+</LinearLayout>
